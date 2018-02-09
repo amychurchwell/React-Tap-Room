@@ -15,7 +15,7 @@ function Header() {
         .nav a{
           font-size: 20px;
           text-decoration: none;
-          color: #808080;
+          color: #000;
         }
     `}</style>
       <div className="container">

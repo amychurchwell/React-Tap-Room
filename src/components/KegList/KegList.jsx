@@ -2,6 +2,27 @@ import React from 'react';
 import Keg from "./Keg";
 import { Link } from 'react-router-dom';
 
+var masterKegList = [
+  {
+    name: 'Butter Beer',
+    brand: 'HufflePuff Brewery',
+    price: '20',
+    alcoholContent: '200'
+  },
+  {
+    name: 'Fireball',
+    brand: 'Spicy Liquor LLC',
+    price: '10',
+    alcoholContent: '100'
+  },
+  {
+    name: 'Motor Oil',
+    brand: 'Robot Party Factory',
+    price: '5',
+    alcoholContent: '0'
+  }
+]
+
 function KegList() {
   return (
     <div>
@@ -12,21 +33,13 @@ function KegList() {
     `}</style>
       <h1>KegList Works</h1>
       <div className="kegcontainer">
-        <Keg
-          name="Butter Beer"
-          brand="HufflePuff Brewery"
-          price="20"
-          alcoholContent="200"/>
-          <Keg
-            name="Fireball"
-            brand="Spicy Liquor LLC"
-            price="10"
-            alcoholContent="100"/>
-            <Keg
-              name="Motor Oil"
-              brand="Robot Party Factory"
-              price="5"
-              alcoholContent="0"/>
+        {masterKegList.map((keg, index) =>
+          <Keg name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            key={index}/>
+        )}
       </div>
     </div>
   );
