@@ -1,6 +1,5 @@
 import React from 'react';
 import hero from '../assets/hero1.jpeg';
-import title from '../assets/title.gif';
 
 const heroImage = {
   backgroundImage: `url(${hero})`

@@ -3,7 +3,7 @@ import React from 'react';
 function NewKegForm() {
   return (
     <div>
-      <h1>NewKegForm Works</h1>
+      <h1 className="subtitle">NewKegForm Works</h1>
     </div>
   );
 }

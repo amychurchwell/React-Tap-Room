@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
+
+import Header from './Header';
 import Error404 from './Error404';
 import Body from './Body';
+import Footer from './Footer';
+
 import KegList from './KegList/KegList';
 import EditKeg from './KegList/EditKeg';
-import Footer from './Footer';
+import SellPint from './Keglist/SellPint';
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
         <Route exact path="/" component={Body} />
         <Route exact path="/keglist" component={KegList} />
         <Route exact path="/editkeg" component={EditKeg} />
+        <Route exact path="/sellpint" component={SellPint} />
         <Route component={Error404} />
       </Switch>
       <Footer />

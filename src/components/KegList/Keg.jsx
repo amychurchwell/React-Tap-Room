@@ -26,6 +26,7 @@ function Keg(props) {
           color: #000;
           border: 1px solid black;
           padding: 5px 30px 5px 30px;
+          margin: 5px;
         }
         ul {
           text-align: left;
@@ -42,6 +43,7 @@ function Keg(props) {
             <li>{props.alcoholContent}% <em>Alcohol Content</em></li>
           </ul>
           <Link to="/editkeg">Edit</Link>
+          <Link to="/sellpint">Sell a pint</Link>
         </div>
       </div>
     </div>
