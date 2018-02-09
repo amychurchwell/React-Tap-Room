@@ -19,6 +19,7 @@ function Header() {
         }
         .nav a:hover {
           background-color: #000;
+          color: #fff;
         }
         .title {
           padding: 5px;

@@ -2,6 +2,8 @@ import React from 'react';
 import Keg from "./Keg";
 import { Link } from 'react-router-dom';
 import beer1 from '../../assets/beer-photo1.jpeg';
+import beer2 from '../../assets/beer-photo2.jpeg';
+import beer3 from '../../assets/beer-photo3.jpeg';
 
 var masterKegList = [
   {
@@ -16,26 +18,21 @@ var masterKegList = [
     brand: 'Spicy Liquor LLC',
     price: '10',
     alcoholContent: '100',
-    image: {beer1}
+    image: beer2
   },
   {
     name: 'Motor Oil',
     brand: 'Robot Party Factory',
     price: '5',
     alcoholContent: '0',
-    image: {beer1}
-  }
+    image: beer3
+  },
 ]
 
 function KegList() {
   return (
     <div>
-      <style jsx>{`
-        .kegcontainer {
-          display: flex;
-        }
-    `}</style>
-      <h1>KegList Works</h1>
+      <h1>Our kegs</h1>
       <div className="kegcontainer">
         {masterKegList.map((keg, index) =>
           <Keg name={keg.name}

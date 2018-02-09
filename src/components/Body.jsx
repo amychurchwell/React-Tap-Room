@@ -12,13 +12,19 @@ function Body() {
           border: 1px solid black;
           width: 500px;
         }
+        .container {
+          display: flex;
+          align-items: center;
+        }
     `}</style>
       <div>
         <h1>Welcome to the React Tap Room!</h1>
-        <div className="employee">
-          <h3>Employee Portal</h3>
-          <p>Username:</p>
-          <p>Password:</p>
+        <div className="container">
+          <div className="employee">
+            <h3>Employee Portal</h3>
+            <p>Username:</p>
+            <p>Password:</p>
+          </div>
         </div>
       </div>
     </div>
