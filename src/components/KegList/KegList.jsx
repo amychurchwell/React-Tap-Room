@@ -63,7 +63,7 @@ function KegList() {
           justify-content: center;
         }
     `}</style>
-      <h1>Our kegs</h1>
+      <h1 className="subtitle">Our kegs</h1>
       <div className="kegcontainer">
         {masterKegList.map((keg, index) =>
           <Keg name={keg.name}

@@ -14,6 +14,9 @@ function App() {
         body{
           font-family: Helvetica;
         }
+        .subtitle {
+          margin-left: 80px;
+        }
       `}</style>
       <Header />
       <Switch>

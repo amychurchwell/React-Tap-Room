@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import title from '../assets/title.gif';
 
 function Header() {
   return (
@@ -18,23 +19,17 @@ function Header() {
           color: #000;
         }
         .nav a:hover {
-          background-color: #000;
-          color: #fff;
+          text-decoration: underline;
         }
-        .title {
-          padding: 5px;
-          padding-right: 10px;
-          padding-left: 10px;
-          border: 1px solid black;
-          background-color: #fff;
-          width: 200px;
-          font-size: 50px;
+        .logo {
+          width: 400px;
+          margin: 15px;
         }
     `}</style>
       <div className="container">
-        <h1 className="title">React Tap Room</h1>
+        <img src={title} className="logo"></img>
         <div className="nav">
-          <Link to="/">Home</Link> <Link to="/keglist">Keg List</Link>
+          <Link to="/">home</Link> | <Link to="/keglist">keg list</Link> | <Link to="/nowhere">404</Link>
         </div>
       </div>
     </div>
