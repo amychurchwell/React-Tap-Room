@@ -1,25 +1,31 @@
 import React from 'react';
 import Keg from "./Keg";
 import { Link } from 'react-router-dom';
+import beer1 from '../../assets/beer-photo1.jpeg';
+
+let beer = {beer1}
 
 var masterKegList = [
   {
     name: 'Butter Beer',
     brand: 'HufflePuff Brewery',
     price: '20',
-    alcoholContent: '200'
+    alcoholContent: '200',
+    image: beer
   },
   {
     name: 'Fireball',
     brand: 'Spicy Liquor LLC',
     price: '10',
-    alcoholContent: '100'
+    alcoholContent: '100',
+    image: {beer1}
   },
   {
     name: 'Motor Oil',
     brand: 'Robot Party Factory',
     price: '5',
-    alcoholContent: '0'
+    alcoholContent: '0',
+    image: {beer1}
   }
 ]
 
@@ -38,6 +44,7 @@ function KegList() {
             brand={keg.brand}
             price={keg.price}
             alcoholContent={keg.alcoholContent}
+            image = {keg.image}
             key={index}/>
         )}
       </div>

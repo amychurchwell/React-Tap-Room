@@ -23,6 +23,7 @@ function Keg(props) {
         }
     `}</style>
       <div className="keg">
+        <img src={props.image}/>
         <h3>{props.name}, {props.brand}</h3>
         <ul>
           <li>${props.price} per pint!</li>
@@ -38,7 +39,8 @@ Keg.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
   price: PropTypes.number,
-  alcoholContent: PropTypes.number
+  alcoholContent: PropTypes.number,
+  image: PropTypes.string
 };
 
 export default Keg;

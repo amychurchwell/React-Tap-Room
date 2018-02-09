@@ -5,7 +5,10 @@ February 9, 2018. Amy Churchwell, Epicodus.
 
 A recreation of an [earlier Angular project](https://github.com/amychurchwell/taproom) using React. An app for a taproom used to track their kegs.
 
-In your description of the project include your thoughts on the differences in development process in Angular versus React.
+### Development in Angular vs. React
+
+Some thoughts on the differences in development.
+
 
 ## App Objectives
 
@@ -48,5 +51,4 @@ $ npm install
 ## Notes
 
 * Commit notes by themselves.
-
-Unforeseen issues and questions during development.
+* Unforeseen issues and questions during development.
