@@ -5,6 +5,7 @@ import Error404 from './Error404';
 import Body from './Body';
 import KegList from './KegList/KegList';
 import EditKeg from './KegList/EditKeg';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/editkeg" component={EditKeg} />
         <Route component={Error404} />
       </Switch>
+      <Footer />
     </div>
   );
 }

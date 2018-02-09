@@ -20,10 +20,12 @@ function Keg(props) {
         .kegimg img{
           width: 100%;
         }
-        a {
+        .keg a {
           text-decoration: none;
           font-weight: bold;
           color: #000;
+          border: 1px solid black;
+          padding: 5px 30px 5px 30px;
         }
         ul {
           text-align: left;

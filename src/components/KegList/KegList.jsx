@@ -60,6 +60,7 @@ function KegList() {
         .kegcontainer{
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
         }
     `}</style>
       <h1>Our kegs</h1>
