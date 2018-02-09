@@ -5,11 +5,6 @@ const heroImage = {
   backgroundImage: `url(${hero})`
 };
 
-const heroTitle = {
-  textAlign: 'center',
-  color: '#2b495f'
-}
-
 function Body() {
   return (
     <div>

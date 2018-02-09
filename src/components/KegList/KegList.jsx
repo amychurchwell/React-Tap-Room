@@ -7,6 +7,10 @@ import beer3 from '../../assets/beer-photo3.jpeg';
 import beer4 from '../../assets/beer-photo4.jpeg';
 import beer5 from '../../assets/beer-photo5.jpeg';
 import beer6 from '../../assets/beer-photo6.jpeg';
+import beer7 from '../../assets/beer-photo7.jpeg';
+import beer8 from '../../assets/beer-photo8.jpeg';
+import beer9 from '../../assets/beer-photo9.jpeg';
+import beer10 from '../../assets/beer-photo10.jpeg';
 
 var masterKegList = [
   {
@@ -50,6 +54,34 @@ var masterKegList = [
     price: '10',
     alcoholContent: '80',
     image: beer6
+  },
+  {
+    name: 'Code School Drove Me To Drink',
+    brand: 'Epicodus',
+    price: '4',
+    alcoholContent: '98',
+    image: beer7
+  },
+  {
+    name: 'Fizzy Brew',
+    brand: 'Beering Deer',
+    price: '19',
+    alcoholContent: '42',
+    image: beer8
+  },
+  {
+    name: 'Beer On A Shelf',
+    brand: 'PDX beer bros',
+    price: '1',
+    alcoholContent: '80',
+    image: beer9
+  },
+  {
+    name: 'Shh This Is Wine',
+    brand: 'Not A Beer Co.',
+    price: '10',
+    alcoholContent: '10',
+    image: beer10
   }
 ]
 

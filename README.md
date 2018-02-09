@@ -13,6 +13,14 @@ Some thoughts on the differences in development.
 
 **React**: _JavaScript library for building user interfaces._
 
+I really enjoyed using Angular. I like the Angular-specific syntax (_ngFor_, _ngIf_, .etc.) TypeScript felt comfortable.
+
+I feel like I can't comment in too much detail about my React experience because it is so new. I have been interested in the component breakdown React encourages, it allows the developer to think of their project in utilitarian pieces. I am also really looking forward to our future lessons about _state_.
+
+Not a huge fan of the React CSS treatment, but I think I will have a better understanding of why in the future. Mostly, there is a big part of me that really wants to separate it into it's own .css file considering how the components are very modular.
+
+JSX has been an interesting challenge so far, but beyond it visually feeling strange it isn't anything too alien.
+
 ## Component Tree
 
 ![component tree](https://raw.githubusercontent.com/amychurchwell/React-Tap-Room/master/src/assets/componenttree.png)
