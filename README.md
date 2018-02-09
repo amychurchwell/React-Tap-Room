@@ -52,25 +52,3 @@ $ npm install
 
 * Commit notes by themselves.
 * Unforeseen issues and questions during development.
-
-Interesting problem with trying to use an image URL as a prop in my keg list loop.
-
-Imported image as usual.
-
-```
-import beer1 from '../../assets/beer-photo1.jpeg';
-```
-When passing _beer1_ into image prop for keg, compiles literally as _'beer1'_ in img src. Not the path file.
-
-Attempted to assign actual path to a variable.
-```
-import beer1 from '../../assets/beer-photo1.jpeg';
-let beer = {beer1}
-
-var masterKegList = [
-  {
-  ...
-    image: beer
-  },
-```
-When inspecting page, compiled into [object Object] in img src tag. Unsuccessful to find a solution in Stack Overflow .etc. on this issue.

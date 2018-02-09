@@ -3,15 +3,13 @@ import Keg from "./Keg";
 import { Link } from 'react-router-dom';
 import beer1 from '../../assets/beer-photo1.jpeg';
 
-let beer = {beer1}
-
 var masterKegList = [
   {
     name: 'Butter Beer',
     brand: 'HufflePuff Brewery',
     price: '20',
     alcoholContent: '200',
-    image: beer
+    image: beer1
   },
   {
     name: 'Fireball',
