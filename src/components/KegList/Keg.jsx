@@ -6,9 +6,6 @@ function Keg(props) {
   return (
     <div>
       <style jsx>{`
-        .kegcontainer {
-          display: flex;
-        }
         .keg {
           border: 1px solid black;
           margin: 15px;

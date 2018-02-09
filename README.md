@@ -9,6 +9,10 @@ A recreation of an [earlier Angular project](https://github.com/amychurchwell/ta
 
 Some thoughts on the differences in development.
 
+## Component Tree
+
+![component tree](https://raw.githubusercontent.com/amychurchwell/React-Tap-Room/master/src/assets/componenttree.png)
+
 
 ## App Objectives
 
