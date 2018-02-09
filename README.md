@@ -68,3 +68,5 @@ $ npm install
 
 * Commit notes by themselves.
 * Unforeseen issues and questions during development.
+
+Unsure how to design the component tree with employee authentication in mind. Technically the same component. In Angular it would be handled with some sort of _ngIf_ hooked up to a boolean, but I suspect this will become clearer once we learn about states.
