@@ -9,6 +9,10 @@ A recreation of an [earlier Angular project](https://github.com/amychurchwell/ta
 
 Some thoughts on the differences in development.
 
+**Angular**: _Typescript-based JavaScript framework._
+
+**React**: _JavaScript library for building user interfaces._
+
 ## Component Tree
 
 ![component tree](https://raw.githubusercontent.com/amychurchwell/React-Tap-Room/master/src/assets/componenttree.png)
@@ -34,11 +38,11 @@ _Both_
 
 ## React Objectives
 
-- [ ] Before coding, spend time planning and drawing out your React app's component structure.
+- [x] Before coding, spend time planning and drawing out your React app's component structure.
 
-- [ ] No dynamic data. For now, just hard-code data directly into your JSX.
+- [x] No dynamic data. For now, just hard-code data directly into your JSX.
 
-- [ ] Commit history depicts a full day's work.
+- [x] Commit history depicts a full day's work.
 
 ## Setup Instructions
 
