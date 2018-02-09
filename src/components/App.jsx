@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import Body from './Body';
 import KegList from './KegList/KegList';
+import EditKeg from './KegList/EditKeg';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Body} />
         <Route exact path="/keglist" component={KegList} />
+        <Route exact path="/editkeg" component={EditKeg} />
         <Route component={Error404} />
       </Switch>
     </div>

@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function EditKeg() {
   return (
     <div>
-      <h1>EditKeg Works</h1>
+      <h1>Edit Keg Form</h1>
+      <Link to="/keglist">Submit</Link>
     </div>
   );
 }
