@@ -46,11 +46,20 @@ _Both_
 
 ## React Objectives
 
+### Part 1
+
 - [x] Before coding, spend time planning and drawing out your React app's component structure.
 
 - [x] No dynamic data. For now, just hard-code data directly into your JSX.
 
 - [x] Commit history depicts a full day's work.
+
+### Part 2
+
+- [] Add a keg to kegs list.
+- [] Update component tree to show state.
+- [] State is used only when necessary.
+- [] State is lifted in an efficient manner that follows best practices.
 
 ## Setup Instructions
 
