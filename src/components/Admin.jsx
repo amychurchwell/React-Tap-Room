@@ -9,7 +9,10 @@ function Admin(props){
     <div>
       <h2 className="subtitle">Employee Portal</h2>
       <RaisedButton href="#/newkeg" label="Add keg" primary={true} />
-      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} onKegSelection={props.onKegSelection}/>
+      <KegList
+        kegList={props.kegList}
+        currentRouterPath={props.currentRouterPath}
+        onKegSelection={props.onKegSelection}/>
     </div>
   );
 }
@@ -17,7 +20,8 @@ function Admin(props){
 Admin.propTypes = {
   kegList: PropTypes.array,
   currentRouterPath: PropTypes.string.isRequired,
-  onKegSelection: PropTypes.func.isRequired
+  onKegSelection: PropTypes.func.isRequired,
+  selectedKeg: PropTypes.object
 };
 
 export default Admin;

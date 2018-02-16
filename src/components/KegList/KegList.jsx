@@ -3,6 +3,7 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 function KegList(props) {
+  console.log(props.kegList);
   return (
     <div>
       <style jsx>{`
@@ -22,7 +23,7 @@ function KegList(props) {
             image = {keg.image}
             currentRouterPath={props.currentRouterPath}
             key={keg.id}
-            onKegSelection={props.onKegSelection}/>
+          />
         )}
       </div>
     </div>
@@ -31,8 +32,7 @@ function KegList(props) {
 
 KegList.propTypes = {
   kegList: PropTypes.array,
-  currentRouterPath: PropTypes.string,
-  onKegSelection: PropTypes.func
+  currentRouterPath: PropTypes.string
 };
 
 export default KegList;

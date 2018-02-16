@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Keg(props) {
+  console.log(props)
   const kegDisplay =
     <div>
       <style jsx>{`
@@ -37,7 +38,7 @@ function Keg(props) {
           padding-top: 5px;
           text-align: center;
           margin-right: 30px;
-          color: #fff;
+          color: pink;
         }
         .keg-header a {
           color: #fff;
@@ -53,6 +54,7 @@ function Keg(props) {
           <ul>
             <li>${props.price} per pint!</li>
             <li>{props.alcoholContent}% <em>Alcohol Content</em></li>
+            <li>{props.id}</li>
           </ul>
         </div>
       </div>
@@ -62,7 +64,7 @@ function Keg(props) {
       <div className="keg-header">
         <Link to="/editkeg">Edit</Link>
         <Link to="/sellpint">Sell a pint</Link>
-        <span onClick={() => {props.onKegSelection({name: props.name});}}>Delete</span>
+        <h3>Delete</h3>
         {kegDisplay}
       </div>
     );
@@ -81,8 +83,7 @@ Keg.propTypes = {
   price: PropTypes.number,
   alcoholContent: PropTypes.number,
   image: PropTypes.string,
-  currentRouterPath: PropTypes.string,
-  onKegSelection: PropTypes.func
+  currentRouterPath: PropTypes.string
 };
 
 export default Keg;
