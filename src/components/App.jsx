@@ -11,7 +11,7 @@ import KegList from './KegList/KegList';
 import EditKeg from './KegList/EditKeg';
 import SellPint from './Keglist/SellPint';
 import NewKegControl from './NewKeg/NewKegControl';
-// import NewKegForm from './NewKeg/NewKegForm';
+import Admin from './Admin';
 
 import beer1 from '../assets/beer-photo1.jpeg';
 
@@ -58,6 +58,7 @@ class App extends React.Component {
             <Route exact path="/editkeg" component={EditKeg} />
             <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
             <Route exact path="/sellpint" component={SellPint} />
+            <Route exact path='/admin' component={Admin} />
             <Route component={Error404} />
           </Switch>
           <Footer />

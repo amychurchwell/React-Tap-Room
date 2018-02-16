@@ -35,7 +35,7 @@ function Body() {
         <div className="hero" style={heroImage}>
           <h3>Welcome!</h3>
           <div className="who">
-            <FlatButton href="#/keglist" backgroundColor="#fff" hoverColor="#cece" label="Employee" />
+            <FlatButton href="#/admin" backgroundColor="#fff" hoverColor="#cece" label="Employee" />
             <FlatButton href="#/keglist" backgroundColor="#fff" hoverColor="#cece" label="Patron" />
           </div>
         </div>
