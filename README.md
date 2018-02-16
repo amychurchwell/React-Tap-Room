@@ -29,7 +29,7 @@ JSX has been an interesting challenge so far, but beyond it visually feeling str
 
 * The components that require state, (NewKegForm and Keg) have been highlighted in red.
 
-* I believe state should live in the root component, App. As it is the common parent of both NewKegForm and Keg.
+* I believe state should live in the root component, **App**. As it is the common parent of both NewKegForm and Keg.
 
 
 ## App Objectives
