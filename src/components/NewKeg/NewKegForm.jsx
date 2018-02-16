@@ -26,8 +26,8 @@ function NewKegForm(props) {
   return (
     <div>
       <h1 className="subtitle">Add a new keg to list</h1>
-      <Paper zDepth={1}>
-        <form onSubmit={handleNewKegFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
+        <Paper zDepth={1}>
           <input
             type="text"
             id="name"
@@ -58,9 +58,10 @@ function NewKegForm(props) {
             placeholder="Image URL"
             ref={(input) => {_image = input;}}/>
           <Divider />
-          <FlatButton label="Add!" type='submit' />
-        </form>
-      </Paper>
+        </Paper>
+        <FlatButton label="Add!" type='submit' />
+      </form>
+      <p>http://via.placeholder.com/400x300</p>
     </div>
   );
 }

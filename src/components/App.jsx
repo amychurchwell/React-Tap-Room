@@ -24,9 +24,10 @@ class App extends React.Component {
         {
           name: 'Butter Beer',
           brand: 'HufflePuff Brewery',
-          price: '20',
-          alcoholContent: '200',
-          image: beer1
+          price: 20,
+          alcoholContent: 200,
+          image: beer1,
+          key: 1
         },
       ]
     };
