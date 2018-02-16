@@ -1,11 +1,32 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-function NewKeg() {
-  return (
-    <div>
-      <h1 className="subtitle">NewKeg Works</h1>
-    </div>
-  );
+class NewKegControl extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      formVisibleOnPage: false
+    };
+  }
+
+  render(){
+    let currentVisibleContent = null;
+    if (this.state.formVisibleOnPage){
+      currentlyVisibleContent = <NewKegForm onNewKegCreation={this.props.onNewKegCreation}/>;
+    } else {
+      currentlyVisibleContent = <h1>Else</h1>
+    }
+    return (
+      <div>
+        {currentVisibleContent}
+      </div>
+    );
+  }
 }
 
-export default NewKeg;
+NewKegControl.propTypes = {
+  onNewKegCreation: PropTypes.func
+};
+
+export default NewKegControl;
