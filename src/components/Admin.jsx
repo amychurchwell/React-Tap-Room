@@ -6,7 +6,7 @@ function Admin(props){
   return (
     <div>
       <h2 className="subtitle">Employee Portal</h2>
-      <KegList kegList={props.kegList} />
+      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} />
     </div>
   );
 }
