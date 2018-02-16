@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+
+// UI
 import FlatButton from 'material-ui/FlatButton';
 import Divider from 'material-ui/Divider';
 import Paper from 'material-ui/Paper';
@@ -61,7 +63,7 @@ function NewKegForm(props) {
         </Paper>
         <FlatButton label="Add!" type='submit' />
       </form>
-      <p>http://via.placeholder.com/400x300</p>
+      <h3>http://via.placeholder.com/400x300</h3>
     </div>
   );
 }
