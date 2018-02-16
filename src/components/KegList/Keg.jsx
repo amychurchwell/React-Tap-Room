@@ -9,7 +9,6 @@ const style = {
 };
 
 function Keg(props) {
-  console.log(props)
   const kegDisplay =
     <div>
       <style jsx>{`
@@ -43,7 +42,6 @@ function Keg(props) {
           border: 1px solid black;
           text-align: center;
           margin-right: 30px;
-          color: pink;
         }
     `}</style>
       <div className="kegcontainer">
@@ -55,7 +53,6 @@ function Keg(props) {
           <ul>
             <li>${props.price} per pint!</li>
             <li>{props.alcoholContent}% <em>Alcohol Content</em></li>
-            <li>{props.id}</li>
           </ul>
         </div>
       </div>
