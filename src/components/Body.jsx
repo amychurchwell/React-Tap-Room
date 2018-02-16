@@ -29,20 +29,9 @@ function Body() {
         .employee button{
           border-radius: 4px;
         }
-        .greeting {
-          background-color: #fff;
-          color: #000;
-          height: 100px;
-          padding: 15px;
-          width: 500px;
-          text-align: center;
-        }
     `}</style>
       <div>
         <div className="hero" style={heroImage}>
-          <div className="greeting">
-            <h1>Welcome!</h1>
-          </div>
           <div className="employee">
             <h3>Employee Portal</h3>
             <p>Username: <input type="text"></input></p>

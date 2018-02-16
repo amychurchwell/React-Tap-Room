@@ -10,14 +10,24 @@ import KegList from './KegList/KegList';
 import EditKeg from './KegList/EditKeg';
 import SellPint from './Keglist/SellPint';
 import NewKegControl from './NewKeg/NewKegControl';
-import NewKegForm from './NewKeg/NewKegForm'
+// import NewKegForm from './NewKeg/NewKegForm';
+
+import beer1 from '../assets/beer-photo1.jpeg';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      masterKegList: [
+        {
+          name: 'Butter Beer',
+          brand: 'HufflePuff Brewery',
+          price: '20',
+          alcoholContent: '200',
+          image: beer1
+        },
+      ]
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }

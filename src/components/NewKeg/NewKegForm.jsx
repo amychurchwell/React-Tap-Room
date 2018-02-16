@@ -16,7 +16,7 @@ function NewKegForm(props) {
     console.log(_price.value);
     console.log(_alcoholContent.value);
     console.log(_image.value);
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, image: _image.value});
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, image: _image.value, id: v4()});
     _name.value = '';
     _brand.value = '';
     _price.value = '';
@@ -54,6 +54,7 @@ function NewKegForm(props) {
           id="image"
           placeholder="Image URL"
           ref={(input) => {_image = input;}}/>
+        <button type='submit'>Add!</button>
       </form>
     </div>
   );
@@ -64,11 +65,3 @@ NewKegForm.propTypes = {
 };
 
 export default NewKegForm;
-
-// Keg.propTypes = {
-//   name: PropTypes.string,
-//   brand: PropTypes.string,
-//   price: PropTypes.number,
-//   alcoholContent: PropTypes.number,
-//   image: PropTypes.string
-// };
