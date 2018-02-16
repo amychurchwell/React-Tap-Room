@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+
+// UI
 import FlatButton from 'material-ui/FlatButton';
 import Divider from 'material-ui/Divider';
 import Paper from 'material-ui/Paper';
@@ -26,8 +28,8 @@ function NewKegForm(props) {
   return (
     <div>
       <h1 className="subtitle">Add a new keg to list</h1>
-      <Paper zDepth={1}>
-        <form onSubmit={handleNewKegFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
+        <Paper zDepth={1}>
           <input
             type="text"
             id="name"
@@ -58,9 +60,10 @@ function NewKegForm(props) {
             placeholder="Image URL"
             ref={(input) => {_image = input;}}/>
           <Divider />
-          <FlatButton label="Add!" type='submit' />
-        </form>
-      </Paper>
+        </Paper>
+        <FlatButton label="Add!" type='submit' />
+      </form>
+      <h3>http://via.placeholder.com/400x300</h3>
     </div>
   );
 }

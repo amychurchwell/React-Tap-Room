@@ -26,7 +26,8 @@ class App extends React.Component {
           brand: 'HufflePuff Brewery',
           price: '20',
           alcoholContent: '200',
-          image: beer1
+          image: beer1,
+          key: '1'
         },
       ]
     };

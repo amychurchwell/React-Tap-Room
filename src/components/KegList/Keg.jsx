@@ -2,6 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import RaisedButton from 'material-ui/RaisedButton';
+
+const style = {
+  margin: 5,
+};
+
 function Keg(props) {
   console.log(props)
   const kegDisplay =
@@ -35,14 +41,9 @@ function Keg(props) {
         .keg-header {
           background-color: black;
           border: 1px solid black;
-          padding-top: 5px;
           text-align: center;
           margin-right: 30px;
           color: pink;
-        }
-        .keg-header a {
-          color: #fff;
-          margin: 15px;
         }
     `}</style>
       <div className="kegcontainer">
@@ -62,9 +63,9 @@ function Keg(props) {
   if (props.currentRouterPath === '/admin'){
     return (
       <div className="keg-header">
-        <Link to="/editkeg">Edit</Link>
-        <Link to="/sellpint">Sell a pint</Link>
-        <h3>Delete</h3>
+        <RaisedButton href="#/editkeg" style={style} label="Edit" />
+        <RaisedButton href="#/sellpint" style={style} label="Sell Pint" />
+        <RaisedButton href="#/" style={style} label="Delete (X)" />
         {kegDisplay}
       </div>
     );
@@ -80,8 +81,8 @@ function Keg(props) {
 Keg.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
-  price: PropTypes.number,
-  alcoholContent: PropTypes.number,
+  price: PropTypes.string,
+  alcoholContent: PropTypes.string,
   image: PropTypes.string,
   currentRouterPath: PropTypes.string
 };

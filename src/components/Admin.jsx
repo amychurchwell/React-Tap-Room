@@ -8,11 +8,8 @@ function Admin(props){
   return (
     <div>
       <h2 className="subtitle">Employee Portal</h2>
-      <RaisedButton href="#/newkeg" label="Add keg" primary={true} />
-      <KegList
-        kegList={props.kegList}
-        currentRouterPath={props.currentRouterPath}
-        onKegSelection={props.onKegSelection}/>
+      <RaisedButton className="subtitle" href="#/newkeg" label="Add keg" primary={true} />
+      <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath} />
     </div>
   );
 }
