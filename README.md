@@ -23,7 +23,7 @@ JSX has been an interesting challenge so far, but beyond it visually feeling str
 
 ## Component Tree
 
-![component tree](https://raw.githubusercontent.com/amychurchwell/React-Tap-Room/master/src/assets/component_treev2.png)
+![component tree](https://raw.githubusercontent.com/amychurchwell/React-Tap-Room/master/src/assets/component_treev2.5.png)
 
 :pushpin: **v 2.0 update:**
 
@@ -31,6 +31,11 @@ JSX has been an interesting challenge so far, but beyond it visually feeling str
 
 * I believe state should live in the root component, **App**. As it is the common parent of both NewKegForm and Keg.
 
+:pushpin: **v 2.5 update:**
+
+* Added Admin route with note about specific view connection to KegList.
+
+* Highlighted App to indicate connection of state.
 
 ## App Objectives
 
@@ -71,7 +76,7 @@ _Both_
 
 - [x] Add a keg to kegs list.
 - [ ] Delete a keg from kegs list.
-- [ ] Admin route that displays employee controls. !Not on patron route.
+- [x] Admin route that displays employee controls. !Not on patron route.
 - [ ] Sell a pint functionality.
 - [ ] Explore Material UI in React.
 

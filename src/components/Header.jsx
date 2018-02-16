@@ -29,7 +29,7 @@ function Header() {
       <div className="container">
         <img src={title} className="logo"></img>
         <div className="nav">
-          <Link to="/">home</Link> | <Link to="/keglist">keg list</Link> | <Link to="/newkeg">add keg to list</Link>
+          <Link to="/">home</Link> | <Link to="/keglist">keg list</Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Keg(props) {
   const kegDisplay =
@@ -47,7 +48,8 @@ function Keg(props) {
   if (props.currentRouterPath === '/admin'){
     return (
       <div>
-        <p>Employee keg option</p>
+        <Link to="/editkeg">Edit</Link>
+        <Link to="/sellpint">Sell a pint</Link>
         {kegDisplay}
       </div>
     );
