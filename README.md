@@ -74,6 +74,8 @@ _Both_
 
 ### Stretch Goals
 
+**CRUD**: Create, Read, Update, and Delete.
+
 - [x] Add a keg to kegs list.
 - [ ] Edit a keg.
 - [ ] Delete a keg from kegs list.

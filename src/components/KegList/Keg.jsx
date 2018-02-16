@@ -37,6 +37,7 @@ function Keg(props) {
           padding-top: 5px;
           text-align: center;
           margin-right: 30px;
+          color: #fff;
         }
         .keg-header a {
           color: #fff;
@@ -61,7 +62,7 @@ function Keg(props) {
       <div className="keg-header">
         <Link to="/editkeg">Edit</Link>
         <Link to="/sellpint">Sell a pint</Link>
-        <Link to="/">Delete</Link>
+        <span onClick={() => {props.onKegSelection({name: props.name});}}>Delete</span>
         {kegDisplay}
       </div>
     );
@@ -80,7 +81,8 @@ Keg.propTypes = {
   price: PropTypes.number,
   alcoholContent: PropTypes.number,
   image: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onKegSelection: PropTypes.func
 };
 
 export default Keg;
