@@ -83,7 +83,7 @@ var masterKegList = [
     alcoholContent: '10',
     image: beer10
   }
-]
+];
 
 function KegList() {
   return (

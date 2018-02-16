@@ -62,10 +62,10 @@ _Both_
 
 ### Part 2
 
-- [] Add a keg to kegs list.
-- [] Update component tree to show state.
-- [] State is used only when necessary.
-- [] State is lifted in an efficient manner that follows best practices.
+- [ ] Add a keg to kegs list.
+- [ ] Update component tree to show state.
+- [ ] State is used only when necessary.
+- [ ] State is lifted in an efficient manner that follows best practices.
 
 ## Setup Instructions
 
@@ -83,5 +83,3 @@ $ npm install
 
 * Commit notes by themselves.
 * Unforeseen issues and questions during development.
-
-Unsure how to design the component tree with employee authentication in mind. Technically the same component. In Angular it would be handled with some sort of _ngIf_ hooked up to a boolean, but I suspect this will become clearer once we learn about states.
