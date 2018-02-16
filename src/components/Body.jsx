@@ -1,5 +1,6 @@
 import React from 'react';
 import hero from '../assets/hero1.jpeg';
+import FlatButton from 'material-ui/FlatButton';
 
 const heroImage = {
   backgroundImage: `url(${hero})`
@@ -17,26 +18,25 @@ function Body() {
           align-items: center;
           flex-direction: column;
         }
-        .employee {
+        .who {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
           padding: 15px;
           border: 1px solid #fff;
           background-color: #030d1e61;
           width: 500px;
           margin: 20px;
-          height: 180px;
+          height: 100px;
           text-align: center;
-        }
-        .employee button{
-          border-radius: 4px;
         }
     `}</style>
       <div>
         <div className="hero" style={heroImage}>
-          <div className="employee">
-            <h3>Employee Portal</h3>
-            <p>Username: <input type="text"></input></p>
-            <p>Password: <input type="text"></input></p>
-            <button>Login</button>
+          <h3>Welcome!</h3>
+          <div className="who">
+            <FlatButton href="#/keglist" backgroundColor="#fff" hoverColor="#cece" label="Employee" />
+            <FlatButton href="#/keglist" backgroundColor="#fff" hoverColor="#cece" label="Patron" />
           </div>
         </div>
       </div>

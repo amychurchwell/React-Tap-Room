@@ -62,10 +62,10 @@ _Both_
 
 ### Part 2
 
-- [ ] Add a keg to kegs list.
-- [ ] Update component tree to show state.
+- [x] Add a keg to kegs list.
+- [x] Update component tree to show state.
 - [ ] State is used only when necessary.
-- [ ] State is lifted in an efficient manner that follows best practices.
+- [x] State is lifted in an efficient manner that follows best practices.
 
 ## Setup Instructions
 

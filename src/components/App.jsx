@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Header from './Header';
 import Error404 from './Error404';
@@ -40,26 +41,28 @@ class App extends React.Component {
 
   render(){
     return (
-      <div>
-        <style jsx global>{`
-          body{
-            font-family: Helvetica;
-          }
-          .subtitle {
-            margin-left: 80px;
-          }
-        `}</style>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Body} />
-          <Route exact path="/keglist" render={()=><KegList kegList={this.state.masterKegList}/>} />
-          <Route exact path="/editkeg" component={EditKeg} />
-          <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
-          <Route exact path="/sellpint" component={SellPint} />
-          <Route component={Error404} />
-        </Switch>
-        <Footer />
-      </div>
+      <MuiThemeProvider>
+        <div>
+          <style jsx global>{`
+            body{
+              font-family: Helvetica;
+            }
+            .subtitle {
+              margin-left: 80px;
+            }
+          `}</style>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Body} />
+            <Route exact path="/keglist" render={()=><KegList kegList={this.state.masterKegList}/>} />
+            <Route exact path="/editkeg" component={EditKeg} />
+            <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
+            <Route exact path="/sellpint" component={SellPint} />
+            <Route component={Error404} />
+          </Switch>
+          <Footer />
+        </div>
+      </MuiThemeProvider>
     );
   }
 

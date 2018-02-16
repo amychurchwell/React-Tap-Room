@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import FlatButton from 'material-ui/FlatButton';
+import Divider from 'material-ui/Divider';
+import Paper from 'material-ui/Paper';
 
 function NewKegForm(props) {
   let _name = null;
@@ -11,11 +14,6 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_brand.value);
-    console.log(_price.value);
-    console.log(_alcoholContent.value);
-    console.log(_image.value);
     props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value, image: _image.value, id: v4()});
     _name.value = '';
     _brand.value = '';
@@ -27,35 +25,42 @@ function NewKegForm(props) {
 
   return (
     <div>
-      <h1 className="subtitle">NewKegForm Works</h1>
-      <form onSubmit={handleNewKegFormSubmission}>
-        <input
-          type="text"
-          id="name"
-          placeholder="Beer Name"
-          ref={(input) => {_name = input;}}/>
-        <input
-          type="text"
-          id="brand"
-          placeholder="Brand"
-          ref={(input) => {_brand = input;}}/>
-        <input
-          type="number"
-          id="price"
-          placeholder="Price"
-          ref={(input) => {_price = input;}}/>
-        <input
-          type="number"
-          id="alcoholContent"
-          placeholder="Alcohol Content"
-          ref={(input) => {_alcoholContent = input;}}/>
-        <input
-          type="text"
-          id="image"
-          placeholder="Image URL"
-          ref={(input) => {_image = input;}}/>
-        <button type='submit'>Add!</button>
-      </form>
+      <h1 className="subtitle">Add a new keg to list</h1>
+      <Paper zDepth={1}>
+        <form onSubmit={handleNewKegFormSubmission}>
+          <input
+            type="text"
+            id="name"
+            placeholder="Beer Name"
+            ref={(input) => {_name = input;}}/>
+          <Divider />
+          <input
+            type="text"
+            id="brand"
+            placeholder="Brand"
+            ref={(input) => {_brand = input;}}/>
+          <Divider />
+          <input
+            type="number"
+            id="price"
+            placeholder="Price"
+            ref={(input) => {_price = input;}}/>
+          <Divider />
+          <input
+            type="number"
+            id="alcoholContent"
+            placeholder="Alcohol Content"
+            ref={(input) => {_alcoholContent = input;}}/>
+          <Divider />
+          <input
+            type="text"
+            id="image"
+            placeholder="Image URL"
+            ref={(input) => {_image = input;}}/>
+          <Divider />
+          <FlatButton label="Add!" type='submit' />
+        </form>
+      </Paper>
     </div>
   );
 }
