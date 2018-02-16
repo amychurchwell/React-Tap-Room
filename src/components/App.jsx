@@ -9,6 +9,8 @@ import Footer from './Footer';
 import KegList from './KegList/KegList';
 import EditKeg from './KegList/EditKeg';
 import SellPint from './Keglist/SellPint';
+import NewKegControl from './NewKeg/NewKegControl';
+import NewKegForm from './NewKeg/NewKegForm'
 
 class App extends React.Component {
 
@@ -42,6 +44,7 @@ class App extends React.Component {
           <Route exact path="/" component={Body} />
           <Route exact path="/keglist" component={KegList} />
           <Route exact path="/editkeg" component={EditKeg} />
+          <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route exact path="/sellpint" component={SellPint} />
           <Route component={Error404} />
         </Switch>
