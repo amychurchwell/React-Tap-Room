@@ -52,7 +52,7 @@ _Both_
 
 ## React Objectives
 
-### Part 1
+### Part 1 Requirements
 
 - [x] Before coding, spend time planning and drawing out your React app's component structure.
 
@@ -60,12 +60,19 @@ _Both_
 
 - [x] Commit history depicts a full day's work.
 
-### Part 2
+### Part 2 Requirements
 
 - [x] Add a keg to kegs list.
 - [x] Update component tree to show state.
-- [ ] State is used only when necessary.
+- [x] State is used only when necessary.
 - [x] State is lifted in an efficient manner that follows best practices.
+
+### Stretch Goals
+
+- [x] Add a keg to kegs list.
+- [ ] Delete a keg from kegs list.
+- [ ] Admin route that displays employee controls. !Not on patron route.
+- [ ] Sell a pint functionality.
 
 ## Setup Instructions
 
