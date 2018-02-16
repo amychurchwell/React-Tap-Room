@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import KegList from './KegList/KegList';
 
-function Admin(){
+function Admin(props){
   return (
     <div>
-      <h2>Admin works!</h2>
+      <h2 className="subtitle">Employee Portal</h2>
+      <KegList kegList={props.kegList} />
     </div>
   );
 }
+
+Admin.propTypes = {
+  kegList: PropTypes.array,
+  currentRouterPath: PropTypes.string.isRequired
+};
 
 export default Admin;

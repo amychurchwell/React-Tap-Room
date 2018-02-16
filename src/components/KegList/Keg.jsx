@@ -42,8 +42,6 @@ function Keg(props) {
             <li>${props.price} per pint!</li>
             <li>{props.alcoholContent}% <em>Alcohol Content</em></li>
           </ul>
-          <Link to="/editkeg">Edit</Link>
-          <Link to="/sellpint">Sell a pint</Link>
         </div>
       </div>
     </div>
