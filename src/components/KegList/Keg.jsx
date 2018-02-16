@@ -7,11 +7,11 @@ function Keg(props) {
   <div>
     <style jsx>{`
       .keg {
-        border: 1px solid black;
-        margin: 15px;
+        border: 1px solid #000;
         text-align: center;
         width: 400px;
         height: 400px;
+        background-color: #fff;
       }
       .kegimg {
         overflow: hidden;
@@ -31,6 +31,17 @@ function Keg(props) {
       ul {
         text-align: left;
       }
+      .keg-header {
+        background-color: black;
+        border: 1px solid black;
+        padding-top: 5px;
+        text-align: center;
+        margin-right: 30px;
+      }
+      .keg-header a {
+        color: #fff;
+        margin: 15px;
+      }
   `}</style>
     <div className="kegcontainer">
       <div className="keg">
@@ -47,9 +58,10 @@ function Keg(props) {
   </div>;
   if (props.currentRouterPath === '/admin'){
     return (
-      <div>
+      <div className="keg-header">
         <Link to="/editkeg">Edit</Link>
         <Link to="/sellpint">Sell a pint</Link>
+        <Link to="/">Delete</Link>
         {kegDisplay}
       </div>
     );

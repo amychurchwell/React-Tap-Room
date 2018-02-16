@@ -75,10 +75,11 @@ _Both_
 ### Stretch Goals
 
 - [x] Add a keg to kegs list.
+- [ ] Edit a keg.
 - [ ] Delete a keg from kegs list.
 - [x] Admin route that displays employee controls. !Not on patron route.
 - [ ] Sell a pint functionality.
-- [ ] Explore Material UI in React.
+- [x] Explore Material UI in React.
 
 ## Setup Instructions
 
