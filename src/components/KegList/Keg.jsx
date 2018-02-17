@@ -18,6 +18,7 @@ function Keg(props) {
           width: 400px;
           height: 400px;
           background-color: #fff;
+          margin: 15px;
         }
         .kegimg {
           overflow: hidden;
@@ -26,20 +27,10 @@ function Keg(props) {
         .kegimg img{
           width: 100%;
         }
-        .keg a {
-          text-decoration: none;
-          font-weight: bold;
-          color: #000;
-          border: 1px solid black;
-          padding: 5px 30px 5px 30px;
-          margin: 5px;
-        }
         ul {
           text-align: left;
         }
         .keg-header {
-          background-color: black;
-          border: 1px solid black;
           text-align: center;
           margin-right: 30px;
         }
@@ -62,7 +53,7 @@ function Keg(props) {
       <div className="keg-header">
         <RaisedButton href="#/editkeg" style={style} label="Edit" />
         <RaisedButton href="#/sellpint" style={style} label="Sell Pint" />
-        <RaisedButton href="#/" style={style} label="Delete (X)" />
+        <RaisedButton onClick={() => {props.onKegSelection({name: props.name, brand: props.brand, price: props.price, alcoholContent: props.alcoholContent, image: props.image});}} style={style} label="Delete (X)" />
         {kegDisplay}
       </div>
     );
@@ -81,7 +72,8 @@ Keg.propTypes = {
   price: PropTypes.string,
   alcoholContent: PropTypes.string,
   image: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onKegSelection: PropTypes.func
 };
 
 export default Keg;
