@@ -14,6 +14,7 @@ import NewKegControl from './NewKeg/NewKegControl';
 import Admin from './Admin';
 
 import beer1 from '../assets/beer-photo1.jpeg';
+import beer2 from '../assets/beer-photo2.jpeg';
 
 class App extends React.Component {
 
@@ -29,6 +30,14 @@ class App extends React.Component {
           image: beer1,
           key: '1'
         },
+        {
+          name: 'Beer',
+          brand: 'PDX Beer co.',
+          price: '5',
+          alcoholContent: '100',
+          image: beer2,
+          key: '2'
+        }
       ],
       selectedKeg: null
     };
@@ -44,9 +53,13 @@ class App extends React.Component {
 
   handleChangingSelectedKeg(keg){
     this.setState({selectedKeg: keg});
-    alert('selectedKeg = ' + keg);
-    var newMasterKegList = this.state.masterKegList.slice();
-    newMasterKegList.shift(keg);
+    let currentKeg = keg;
+    let newMasterKegList = this.state.masterKegList.slice();
+    for(let i=0; i < newMasterKegList.length; i++){
+      if(newMasterKegList[i] === currentKeg){
+        newMasterKegList.splice(i,1);
+      }
+    }
     this.setState({masterKegList: newMasterKegList});
   }
 

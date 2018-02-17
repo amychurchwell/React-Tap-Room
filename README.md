@@ -74,11 +74,10 @@ _Both_
 
 ### Stretch Goals
 
-**CRUD**: Create, Read, Update, and Delete.
+**CRUD**: _Create_, Read, Update, and _Delete._
 
-- [x] Add a keg to kegs list.
 - [ ] Edit a keg.
-- [ ] Delete a keg from kegs list.
+- [x] Delete a keg from kegs list.
 - [x] Admin route that displays employee controls. !Not on patron route.
 - [ ] Sell a pint functionality.
 - [x] Explore Material UI in React.
