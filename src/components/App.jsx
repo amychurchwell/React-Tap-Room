@@ -53,13 +53,9 @@ class App extends React.Component {
 
   handleChangingSelectedKeg(keg){
     this.setState({selectedKeg: keg});
-    let currentKeg = keg;
+    console.log(keg.name);
     let newMasterKegList = this.state.masterKegList.slice();
-    for(let i=0; i < newMasterKegList.length; i++){
-      if(newMasterKegList[i] === currentKeg){
-        newMasterKegList.splice(i,1);
-      }
-    }
+    newMasterKegList.split(keg);
     this.setState({masterKegList: newMasterKegList});
   }
 
