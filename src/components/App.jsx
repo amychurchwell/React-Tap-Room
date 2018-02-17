@@ -44,7 +44,10 @@ class App extends React.Component {
 
   handleChangingSelectedKeg(keg){
     this.setState({selectedKeg: keg});
-    alert('selectedKeg = ' + this.state.selectedKeg.name);
+    alert('selectedKeg = ' + keg);
+    var newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.shift(keg);
+    this.setState({masterKegList: newMasterKegList});
   }
 
   render(){
